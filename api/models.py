@@ -10,3 +10,5 @@ class Customer(models.Model):
     # updated every time the row is saved (INSERT or UPDATE)
     last_modified = models.DateTimeField(auto_now=True)
 
+    def _str_(self):
+        return self.title
